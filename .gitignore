@@ -21,3 +21,7 @@ previous.sh
 jam-files/bjam
 jam-files/engine/bin.*/
 jam-files/engine/bootstrap/
+build/
+.project
+.pydevproject
+python/*.html
