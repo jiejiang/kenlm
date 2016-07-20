@@ -59,6 +59,7 @@ template <class Model> void Query(const Model &model, bool sentence_context) {
       out_stream << "</s>=" << model.GetVocabulary().EndSentence() << ' ' << static_cast<unsigned int>(ret.ngram_length)  << ' ' << ret.prob << '\t';
     }
     out_stream << "Total: " << total << " OOV: " << oov << '\n';
+    out_stream.flush();
     corpus_total += total;
     corpus_oov += oov;
   }
